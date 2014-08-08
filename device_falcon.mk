@@ -32,3 +32,11 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 $(call inherit-product, device/motorola/msm8226-common/keylayout/keylayout.mk)
 $(call inherit-product, vendor/motorola/falcon/falcon-vendor.mk)
+
+
+# inherit from the EOS vendor, if present
+$(call inherit-product-if-exists, vendor/eos/config/common_full_phone.mk)
+
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
