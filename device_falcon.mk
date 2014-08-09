@@ -31,4 +31,4 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 $(call inherit-product, device/motorola/msm8226-common/keylayout/keylayout.mk)
-$(call inherit-product, vendor/motorola/falcon/falcon-vendor.mk)
+$(call inherit-product, vendor/motorola/msm8226-common/falcon-vendor.mk)

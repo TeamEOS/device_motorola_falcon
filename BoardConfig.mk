@@ -24,7 +24,7 @@
 -include device/motorola/msm8226-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/falcon/BoardConfigVendor.mk
+-include vendor/motorola/msm8226-common/BoardConfigVendor.mk
 
 LOCAL_PATH := device/motorola/falcon
 
