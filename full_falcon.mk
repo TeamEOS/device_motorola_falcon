@@ -25,8 +25,11 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from xt1034 device
-$(call inherit-product, device/motorola/falcon/device_falcon.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, device/motorola/msm8226-common/msm8226.mk)
+$(call inherit-product, device/motorola/msm8226-common/keylayout/keylayout.mk)
+$(call inherit-product, vendor/motorola/msm8226-common/falcon-vendor.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := falcon
@@ -34,6 +37,16 @@ PRODUCT_NAME := full_falcon
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := falcon
 PRODUCT_MANUFACTURER := motorola
+
+LOCAL_PATH := device/motorola/falcon
+
+# falcon specific overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+PRODUCT_LOCALES := en_US
+PRODUCT_LOCALES += xhdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # inherit from the EOS vendor, if present
 $(call inherit-product-if-exists, vendor/eos/config/common_full_phone.mk)
