@@ -36,7 +36,7 @@ PRODUCT_DEVICE := falcon
 PRODUCT_NAME := full_falcon
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := falcon
-PRODUCT_MANUFACTURER := motorola
+PRODUCT_MANUFACTURER := MOTOROLA
 
 LOCAL_PATH := device/motorola/falcon
 
