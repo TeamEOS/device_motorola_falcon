@@ -20,6 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from falcon device
 $(call inherit-product, device/motorola/falcon/device.mk)
 
+# inherit from the EOS vendor, if present
+$(call inherit-product-if-exists, vendor/eos/config/common_full_phone.mk)
+
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := falcon
 PRODUCT_NAME := full_falcon
