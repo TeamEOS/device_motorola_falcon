@@ -7,8 +7,8 @@
   },
   {
     "remote": "github",
-    "repository": "CyanogenMod/android_kernel_motorola_msm8226",
-    "revision": "cm-12.1",
+    "repository": "NicholasPace/android_kernel_motorola_msm8226",
+    "revision": "lollipop",
     "target_path": "kernel/motorola/msm8226"
   },
   {
