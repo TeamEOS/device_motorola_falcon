@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "CyanogenMod/android_device_motorola_msm8226-common",
+    "repository": "NicholasPace/android_device_motorola_msm8226-common",
     "revision": "cm-12.1",
     "target_path": "device/motorola/msm8226-common"
   },
