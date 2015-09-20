@@ -5,7 +5,7 @@ $(call inherit-product, vendor/eos/config/common_full_phone.mk)
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-vendor/eos/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
+vendor/eos/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_RELEASE_NAME := MOTO G
 PRODUCT_NAME := eos_falcon
